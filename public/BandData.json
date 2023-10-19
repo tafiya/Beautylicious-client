@@ -1,0 +1,31 @@
+[   {
+        "id": 1,
+        "band_name": "Mac",
+        "band_image": "https://i.ibb.co/x2qPj40/johanne-pold-jacobsen-vyh-Yv-Ci-L3-QQ-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "band_name": "Revolution",
+        "band_image": "https://i.ibb.co/gjtGS9K/450x450-festiveallure.jpg"
+    },
+    {
+        "id": 3,
+        "band_name": "Dior",
+        "band_image": "https://i.ibb.co/R2VLyX7/alejandra-rios-lh56-T1-a-Sz8-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "band_name": "Avon",
+        "band_image": "https://i.ibb.co/ZVqrCSy/coco-tafoya-w4b-Agr3fml-U-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "band_name": "Coty",
+        "band_image": "https://i.ibb.co/gtFnCcJ/jazmin-quaynor-o2-AW6r-Rttus-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "band_name": "L`Oreal",
+        "band_image": "https://i.ibb.co/8Y13czP/laura-chouette-mfv-Tt-NPjo-PY-unsplash.jpg"
+    }
+]
