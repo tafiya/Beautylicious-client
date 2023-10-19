@@ -18,14 +18,14 @@ import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import AuthProvider from './Provider/AuthProvider';
 import PrivateRoute from './componants/Privateroute';
-// import ErrorPage from './Pages/ErrorPage';
+import ErrorPage from './Pages/ErrorPage';
 import Blog from './Pages/ExtraPage/Blog';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    // errorElement:<ErrorPage></ErrorPage>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path:"/",
