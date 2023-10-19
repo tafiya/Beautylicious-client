@@ -1,6 +1,6 @@
 import BandCard from "../componants/BandCard";
 import Banner from "../componants/Banner";
-import Blog from "../componants/ExtraSection/Blog";
+
 import CreateItem from "../componants/ExtraSection/CreateItem";
 import Footer from "../componants/Footer";
 import Navbar from "../componants/Navbar";
@@ -20,7 +20,7 @@ const Home = () => {
        </div>
        <CreateItem></CreateItem>
        <div className=" max-w-[1400px] mx-auto">
-       <Blog></Blog>
+       
 
        </div>
        

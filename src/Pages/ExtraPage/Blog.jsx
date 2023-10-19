@@ -1,8 +1,17 @@
-import beauty from '../../assets/image/laura-chouette-YzaRgVOweMY-unsplash.jpg'
+
+
+// import beauty from '../../assets/image/laura-chouette-YzaRgVOweMY-unsplash.jpg'
+import Footer from '../../componants/Footer';
+import Navbar from '../../componants/Navbar';
 
 const Blog = () => {
-return(< div > <h2 className=' text-center text-6xl font-extrabold text-slate-700 mt-14'>READ THE BLOG</h2>
+return(
+< div > 
+<Navbar></Navbar>
+
+{/* <h2 className=' text-center text-6xl font-extrabold text-slate-700 mt-14'>READ THE BLOG</h2>
 <hr/>
+<div className=" max-w-[1400px] mx-auto">
 <div className=" grid md:grid-cols-3 grid-cols-1 gap-6">
     <div className="card">
     <div className="hero text-left items-start  h-80 " style={{ backgroundImage: `url(${beauty})` }}>
@@ -48,7 +57,11 @@ return(< div > <h2 className=' text-center text-6xl font-extrabold text-slate-70
     </div>
 
 
-</div></div>);
+</div>
+</div> */}
+<Footer></Footer>
+
+</div>);
 
 };
 
