@@ -20,6 +20,7 @@ import AuthProvider from './Provider/AuthProvider';
 import PrivateRoute from './componants/Privateroute';
 import ErrorPage from './Pages/ErrorPage';
 import Blog from './Pages/ExtraPage/Blog';
+import Contacts from './Pages/ExtraPage/Contacts';
 
 const router = createBrowserRouter([
   {
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path:"/blog",
         element:<PrivateRoute><Blog></Blog></PrivateRoute>
+      },
+      {
+        path:'/contact',
+        element:<PrivateRoute><Contacts></Contacts></PrivateRoute>
       }
    
     ],
