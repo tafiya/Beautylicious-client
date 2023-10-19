@@ -1,5 +1,6 @@
 import BandCard from "../componants/BandCard";
 import Banner from "../componants/Banner";
+import ClientReview from "../componants/ClientReview";
 
 import CreateItem from "../componants/ExtraSection/CreateItem";
 import Footer from "../componants/Footer";
@@ -20,6 +21,7 @@ const Home = () => {
        </div>
        <CreateItem></CreateItem>
        <div className=" max-w-[1400px] mx-auto">
+        <ClientReview></ClientReview>
        
 
        </div>
