@@ -1,6 +1,6 @@
 
 
-// import beauty from '../../assets/image/laura-chouette-YzaRgVOweMY-unsplash.jpg'
+import beauty from '../../assets/image/laura-chouette-YzaRgVOweMY-unsplash.jpg'
 import Footer from '../../componants/Footer';
 import Navbar from '../../componants/Navbar';
 
@@ -9,7 +9,7 @@ return(
 < div > 
 <Navbar></Navbar>
 
-{/* <h2 className=' text-center text-6xl font-extrabold text-slate-700 mt-14'>READ THE BLOG</h2>
+<h2 className=' text-center text-6xl font-extrabold text-slate-700 mt-14'>READ THE BLOG</h2>
 <hr/>
 <div className=" max-w-[1400px] mx-auto">
 <div className=" grid md:grid-cols-3 grid-cols-1 gap-6">
@@ -58,7 +58,7 @@ return(
 
 
 </div>
-</div> */}
+</div>
 <Footer></Footer>
 
 </div>);
