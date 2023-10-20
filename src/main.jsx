@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/carts",
-        element:<MyCarts></MyCarts>,
+        element:<PrivateRoute><MyCarts></MyCarts></PrivateRoute>,
         loader:()=>fetch("https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/users")
       },
       {
