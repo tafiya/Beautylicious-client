@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const UpdateProducts = () => {
     const updateCoffee =useLoaderData()
     const{_id,photo,bandName,name,type,rating,price,description}=updateCoffee;
-    console.log(updateCoffee)
+    console.log('showing the update info',updateCoffee)
     const handleSubmit=e=>{
         e.preventDefault();
         const form =e.target;
@@ -20,7 +20,7 @@ const UpdateProducts = () => {
         const photo=form.photo.value;
 
         const UpdateCoffee ={_id,name,type,price,description,rating,bandName,photo}
-      console.log(UpdateCoffee)
+      console.log('after update',UpdateCoffee)
       fetch(`http://localhost:3500/products/${_id}`,{
         method:"PUT",
         headers:{
@@ -33,7 +33,7 @@ const UpdateProducts = () => {
         {
             Swal.fire(
                 'Good job!',
-                'You clicked the button!',
+                'Product is updated',
                 'success'
               )
            

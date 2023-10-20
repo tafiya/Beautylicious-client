@@ -40,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/carts",
-        element:<MyCarts></MyCarts>
+        element:<MyCarts></MyCarts>,
+        loader:()=>fetch("http://localhost:3500/users")
       },
       {
         path:'/bands',

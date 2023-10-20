@@ -1,28 +1,83 @@
-
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
+import Navbar from "../componants/Navbar";
+import Footer from "../componants/Footer";
 
 const MyCarts = () => {
-    return (
-     <div>
-        <div className="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
-  <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-    <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
-  </div>
-  <div className="relative p-6 px-6 py-14 md:px-12">
-    <h2 className="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-      How we design and code open-source projects?
-    </h2>
-    <h5 className="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
-      Tania Andrew
-    </h5>
-    <img
-      alt="tania andrew"
-      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-      className="relative inline-block h-[74px] w-[74px] rounded-full border-2 border-white object-cover object-center"
-    />
-  </div>
+
+  const loadedUsers = useLoaderData()
+  const [users,setUsers]= useState(loadedUsers)
+  const handleDelete =id=>{
+      console.log(id);
+      Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+              fetch(`http://localhost:3500/users/${id}`,{
+                  method:"DELETE"
+              })
+              .then(res=>res.json())
+              .then(data=>{
+                  console.log(data)
+                  if(data.deletedCount>0)
+                  {
+                  Swal.fire(
+                  'Deleted!',
+                  'Your Coffee has been deleted.',
+                  'success'
+                )
+  
+              //    remove the deleted items and the rest in setCoffees
+                const remaining = users.filter(cof => cof._id !==id);
+                setUsers(remaining);
+  
+                  }
+              })
+            
+          }
+        })
+
+  }
+  return (
+    <div>
+      <Navbar></Navbar>
+      <div className=" max-w-[1400px] mx-auto my-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+   {
+users.map(user=> 
+<div key={user._id} className="card card-compact w-96 h-96 bg-base-100 shadow-xl">
+<figure><img src={user.photo}alt="Shoes" /></figure>
+<div className="card-body">
+<h2 className="card-title">{user.name}</h2>
+<p>{user.description}</p>
+<p>{user.price}</p>
+<div className="card-actions justify-end">
+<button className="btn btn-primary" onClick={()=>handleDelete(user._id)}> X</button>
 </div>
-     </div>
-    );
+</div>
+</div>
+
+)
+}
+    </div>
+
+      </div>
+      
+   <Footer></Footer>
+   
+
+
+
+    
+</div>
+  );
 };
 
 export default MyCarts;

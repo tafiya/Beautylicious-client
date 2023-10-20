@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const SelectedBandCard = ({band}) => {
     const {_id,photo,name,type,rating,price}=band;
+    
     return (
         <div className="card card-compact  bg-base-100 shadow-xl">
         <figure>

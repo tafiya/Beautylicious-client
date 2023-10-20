@@ -30,7 +30,7 @@ const AddProducts = () => {
         {
             Swal.fire(
                 'Good job!',
-                'You clicked the button!',
+                'One product is added!',
                 'success'
               )
               console.log(data)

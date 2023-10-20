@@ -13,8 +13,9 @@ const Slider = () => {
             <div className="hero-overlay bg-opacity-60 rounded-lg "></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="text-white">
-                <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">We make your event  <br /> beautiful</h1>
-                <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">WE PERSONALIZE YOUR WEDDING EVENTS</p>
+                <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">TRY OUR NEW
+ COLLECTION</h1>
+                <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">WE Produce you the best one!!!</p>
        
               </div>
             </div>
@@ -32,8 +33,8 @@ const Slider = () => {
             <div className="hero-overlay bg-opacity-60 rounded-lg "></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="text-white">
-                <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">CELEBRATE YOUR EVENTSTHAT <br /> LASTS LONGER</h1>
-                <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">Birthday Event Management Specialists</p>
+                <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">Grab your offer...</h1>
+                <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">You can avail offer by applying the coupon</p>
                
               </div>
             </div>
@@ -49,8 +50,8 @@ const Slider = () => {
             <div className="hero-overlay bg-opacity-60 rounded-lg "></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="text-white">
-              <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">We make your event  <br /> beautiful</h1>
-              <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">WE PERSONALIZE YOUR WEDDING EVENTS</p>
+              <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">Buy Products in Market Challenging price</h1>
+              <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">We offer your desire product in qualityful and cheapest  price</p>
               
               </div>
             </div>
@@ -66,8 +67,8 @@ const Slider = () => {
             <div className="hero-overlay bg-opacity-60 rounded-lg "></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="text-white">
-              <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">We make your event  <br /> beautiful</h1>
-              <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">WE PERSONALIZE YOUR WEDDING EVENTS</p>
+              <h1 className="mb-5 text-2xl lg:text-7xl font-extrabold">Apply this coupon to get 20% flat discount</h1>
+              <p className="mb-5 text-sm font-normal lg:text-xl lg:font-medium">This offer is valid for only first purchase</p>
               </div>
             </div>
           </div>

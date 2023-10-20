@@ -1,7 +1,30 @@
 
+import Swal from "sweetalert2";
+
 
 const EachDeatils = ({NewItem}) => {
     const {photo,description,name,price}=NewItem;
+     const handleCart=()=>{
+      const cartItems={photo,description,name,price}
+      console.log('handle click',cartItems);
+      fetch('http://localhost:3500/users',{
+        method:"POST",
+        headers:{
+            'content-type': 'application/json'
+        },
+        body:JSON.stringify(cartItems)
+    })
+    .then(res=>res.json())
+    .then(data=>
+        {
+            console.log(data)
+            Swal.fire(
+              
+              'Product is added in cart',
+              'success'
+            );
+        })
+     }
     return (
         <div>
              <div className="my-14 max-w-7xl mx-auto">
@@ -19,12 +42,18 @@ const EachDeatils = ({NewItem}) => {
          {description}
         </p>
         <p className="text-lg text-slate-500 mb-6">{price}</p>
-        <button className=" w-full btn btn-active text-white bg-red-400">Add to cart</button>
+      
+        {/* <button onClick={handleCart} className=" w-full btn btn-active text-white bg-red-400">Add to cart</button> */}
+            <button onClick={handleCart}> Add to cart</button>
+      
       </div>
+ 
 
         </div>
 
         </div>
+        
+   
             
         </div>
     );
