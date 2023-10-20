@@ -20,7 +20,7 @@ const MyCarts = () => {
           confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
           if (result.isConfirmed) {
-              fetch(`http://localhost:3500/users/${id}`,{
+              fetch(`https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/users/${id}`,{
                   method:"DELETE"
               })
               .then(res=>res.json())

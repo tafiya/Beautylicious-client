@@ -21,7 +21,7 @@ const UpdateProducts = () => {
 
         const UpdateCoffee ={_id,name,type,price,description,rating,bandName,photo}
       console.log('after update',UpdateCoffee)
-      fetch(`http://localhost:3500/products/${_id}`,{
+      fetch(`https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/products/${_id}`,{
         method:"PUT",
         headers:{
             'content-type': 'application/json'

@@ -7,7 +7,7 @@ const EachDeatils = ({NewItem}) => {
      const handleCart=()=>{
       const cartItems={photo,description,name,price}
       console.log('handle click',cartItems);
-      fetch('http://localhost:3500/users',{
+      fetch('https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/users',{
         method:"POST",
         headers:{
             'content-type': 'application/json'
@@ -44,7 +44,7 @@ const EachDeatils = ({NewItem}) => {
         <p className="text-lg text-slate-500 mb-6">{price}</p>
       
         {/* <button onClick={handleCart} className=" w-full btn btn-active text-white bg-red-400">Add to cart</button> */}
-            <button onClick={handleCart}> Add to cart</button>
+            <button className="btn btn-primary" onClick={handleCart}> Add to cart</button>
       
       </div>
  
