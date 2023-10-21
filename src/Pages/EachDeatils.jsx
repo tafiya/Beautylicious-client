@@ -7,7 +7,7 @@ const EachDeatils = ({NewItem}) => {
      const handleCart=()=>{
       const cartItems={photo,description,name,price}
       console.log('handle click',cartItems);
-      fetch('https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/users',{
+      fetch('https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/users',{
         method:"POST",
         headers:{
             'content-type': 'application/json'

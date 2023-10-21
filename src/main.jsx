@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       {
         path:"/carts",
         element:<PrivateRoute><MyCarts></MyCarts></PrivateRoute>,
-        loader:()=>fetch("https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/users")
+        loader:()=>fetch("https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/users")
       },
       {
         path:'/bands',
@@ -51,18 +51,18 @@ const router = createBrowserRouter([
       {
         path:'/products/:band_name',
         element:<ViewProducts ></ViewProducts>,
-        loader:()=>fetch('https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/products')
+        loader:()=>fetch('https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/products')
       },
       {
         path:'/detailProducts/:id',
         element:<PrivateRoute><DetailsProducts></DetailsProducts></PrivateRoute>,
-        loader:()=>fetch('https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/products')
+        loader:()=>fetch('https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/products')
 
       },
       {
         path:"/updateProducts/:id",
         element:<PrivateRoute><UpdateProducts></UpdateProducts></PrivateRoute>,
-        loader:({params})=>fetch(`https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/products/${params.id}`)
+        loader:({params})=>fetch(`https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/${params.id}`)
       },
       {
         path:'/login',

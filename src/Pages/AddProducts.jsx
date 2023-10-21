@@ -18,7 +18,7 @@ const AddProducts = () => {
 
         const addProducts ={name,type,price,description,rating,bandName,photo}
       console.log(addProducts)
-      fetch('https://cosmetics-brand-base-website-server-cyyzawrrz-tafiyas-projects.vercel.app/products',{
+      fetch('https://cosmetics-brand-base-website-server-at08dwp6n-tafiyas-projects.vercel.app/products',{
         method:"POST",
         headers:{
             'content-type': 'application/json'
